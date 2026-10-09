@@ -428,6 +428,7 @@ py_test(
     deps = [
         ":export_docker",
         ":model_lib",
+        "//third_party/py/httpx2",  # buildcleaner: keep
         "//ydf:api",
         "//ydf/utils:test_utils",
         "@abseil-py//absl/testing:absltest",
